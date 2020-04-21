@@ -15,7 +15,7 @@ public class FinderByFirstAndLastName implements IFinder {
     }
 	
 	@Override
-	public List<Customer> found(List<Customer> customers) {
+	public List<Customer> find(List<Customer> customers) {
 		// TODO Auto-generated method stub
 		List<Customer> result = new ArrayList<Customer>();
 		for (Customer customer : customers) {

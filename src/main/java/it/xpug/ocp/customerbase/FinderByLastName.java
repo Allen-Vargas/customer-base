@@ -13,7 +13,7 @@ public class FinderByLastName implements IFinder {
     }
 	
 	@Override
-	public List<Customer> found(List<Customer> customers) {
+	public List<Customer> find(List<Customer> customers) {
 		List<Customer> result = new ArrayList<Customer>();
 		for (Customer customer : customers) {
 			if (customer.lastName().equals(lastName)) {

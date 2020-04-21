@@ -26,19 +26,22 @@ public class CustomerBaseTest {
 
 	@Test
 	public void findByLastName() throws Exception {
-		List<Customer> found = customerBase.findByLastName("Rossi");
+		IFinder finderByLastName = new FinderByLastName("Rossi");
+		List<Customer> found = customerBase.findBy(finderByLastName);
 		assertThat(found, is(asList(alice, bob)));
 	}
 
 	@Test
 	public void findByFirstAndLastName() throws Exception {
-		List<Customer> found = customerBase.findByFirstAndLastName("Alice", "Rossi");
+		IFinder finderByFirstAndLastName = new FinderByFirstAndLastName("Alice", "Rossi");
+		List<Customer> found = customerBase.findBy(finderByFirstAndLastName);
 		assertThat(found, is(asList(alice)));
 	}
 
 	@Test
 	public void findWithCreditGreaterThan() throws Exception {
-		List<Customer> found = customerBase.findByCreditGreaterThan(20000);
+		IFinder finderByCreditGreater = new FinderByCreditGreater(20000);
+		List<Customer> found = customerBase.findBy(finderByCreditGreater);
 		assertThat(found, is(asList(charlie)));
 	}
 

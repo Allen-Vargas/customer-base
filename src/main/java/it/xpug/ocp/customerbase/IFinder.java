@@ -3,5 +3,5 @@ package it.xpug.ocp.customerbase;
 import java.util.List;
 
 public interface IFinder {
-	public List<Customer> found(List<Customer> customers);
+	public List<Customer> find(List<Customer> customers);
 }
