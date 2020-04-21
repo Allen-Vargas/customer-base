@@ -5,7 +5,7 @@ import java.util.List;
 public class FinderByFirstAndLastName implements IFinder {
 
 	@Override
-	public List<Customer> found(Customer customer) {
+	public List<Customer> found(List<Customer> customers) {
 		// TODO Auto-generated method stub
 		return null;
 	}
