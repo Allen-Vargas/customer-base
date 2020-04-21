@@ -8,7 +8,7 @@ public class FinderByFirstAndLastName implements IFinder {
 	private String lastName="";
 	private String firstName="";
 	
-	public void FindByLastName(String firstName, String lastName)
+	public FinderByFirstAndLastName(String firstName, String lastName)
     {
 		this.firstName = firstName;
         this.lastName = lastName;

@@ -7,7 +7,7 @@ public class FinderByCreditGreater implements IFinder {
 
 	private int credit = 0;
 	
-	public void FindByCreditGreaterThan(int credit)
+	public FinderByCreditGreater(int credit)
     {
         this.credit = credit;
     }

@@ -7,7 +7,7 @@ public class FinderByLastName implements IFinder {
 
 	private String lastName="";
 	
-	public void FindByLastName(String lastName)
+	public FinderByLastName(String lastName)
     {
         this.lastName = lastName;
     }
